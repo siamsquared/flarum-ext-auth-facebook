@@ -1,5 +1,5 @@
 {
-    "name": "desmothenes/flarum-ext-auth-facebook",
+    "name": "siamsquared/flarum-ext-auth-facebook",
     "description": "Allow users to log in with Facebook.",
     "type": "flarum-extension",
     "keywords": ["authentication"],
