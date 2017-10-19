@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of Flarum.
  *
@@ -43,7 +42,7 @@ class FacebookAuthController extends AbstractOAuth2Controller
             'clientId'        => $this->settings->get('flarum-auth-facebook.app_id'),
             'clientSecret'    => $this->settings->get('flarum-auth-facebook.app_secret'),
             'redirectUri'     => $redirectUri,
-            'graphApiVersion' => 'v2.8',
+            'graphApiVersion' => 'v2.7',
         ]);
     }
 
@@ -71,6 +70,7 @@ class FacebookAuthController extends AbstractOAuth2Controller
     protected function getSuggestions(ResourceOwnerInterface $resourceOwner)
     {
         return [
+            'facebook_id' => $resourceOwner->getId(),
             'username' => $resourceOwner->getName(),
             'avatarUrl' => $resourceOwner->getPictureUrl()
         ];
