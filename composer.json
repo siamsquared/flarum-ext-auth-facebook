@@ -16,7 +16,7 @@
     },
     "require": {
         "flarum/core": "^0.1.0-beta.6",
-        "league/oauth2-facebook": "~2.0"
+        "siamsquared/oauth2-facebook": "dev-master"
     },
     "autoload": {
         "psr-4": {
